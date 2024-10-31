@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação Dólar/Real</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversor de Moeda (Dólar e Real)</h1><br><br><br>
+    
+    <div id="converter">
+        <div>
+            <label for="dolar-value">Conversão: Dólar para Real</label>
+            <input type="number" id="dolar-value" placeholder="Digite o valor em Dólar">
+            <button onclick="convertDolarToReal()">Converter para Real (BRL)</button>
+        </div><br><br><br>
+        
+        <div>
+            <label for="real-value">Conversão: Real para Dólar</label>
+            <input type="number" id="real-value" placeholder="Digite o valor em Reais">
+            <button onclick="convertRealToDolar()">Converter para Dólar (USD)</button>
+        </div>
+    </div>
+    
+    <p id="result"></p>
+
+    <button onclick="zerarCotacao()">Zerar Cotação</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
